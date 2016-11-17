@@ -60,80 +60,52 @@
 
 		<!--主体-->
 		
-	<section id="hero">
-		<div class="row"></div>
+  
+
+<div class="banner"></div> 
+	
+<div class="wrapper">
+
+	<section id="about">
+		<h3>关于我们</h3>
+		<p>2012年4月深圳市橙子游戏科技有限公司成立，是中国领先的移动互联网第三方服务平台型公司，是获得了“国家高新技术企业认证”及“双软认证”的高科技企业。（www.lineorange.com）。</p>
+		<p>2013年1月获得天使轮融资500万，2014年12月获得A轮融资2000万</p>
+		<p>2015年9月启动股份制改革，更名为“深圳橙子互动股份有限公司”，已在新三板递交挂牌申请</p>
+		<p>公司拥有众多无形资产项目：“国家高新科技企业”、“双软”、“文网文”、ICP等认证；获深圳政府创新基金、文化产业基金扶持；软件著作权24个；有注册商标2个；发明专利2个</p>
 	</section>
-	<div class="wrapper">
-			<!--优势服务-->
-			<div class="membership">
-				<div class="row">
-					<div class="top_section col s12">
-						<h3>优势服务</h3>
-						<p><img src="/Public/Home/images/home/youshi.png" /></p>						
-					</div>
-				</div>
-			</div>
-
-			<div class="divider"></div>
-			
-			<!--投放案例-->
-			<div class="membership">
-				<div class="row">
-					<div class="top_section col s12">
-						<h3>投放案例</h3>
-						<p><img src="/Public/Home/images/home/anli.png" /></p>						
-					</div>
-				</div>
-			</div>
 	
-			<!--合作伙伴-->
-			<div class="membership">
-				<div class="row">
-					<div class="top_section col s12">
-						<h3>合作伙伴</h3>
-						<p><img src="/Public/Home/images/home/huoban.png" /></p>						
-					</div>
-				</div>
-			</div>
+	<div class="divider"></div>
 	
-			<div class="divider"></div>
-
-			<div class="divider hide-on-med-and-up"></div>
+	<section id="join">
+		<h3>加入我们</h3>
+		<p>有种工作，不仅是工作，我们不仅在创造产品，而是在改变世界：打造了全球第一台蓝牙QPOS，开启了喵喵微店，精耕了智慧商圈，不断地在做着革命性的创新，在做着未有人做过的事业。钱方，让交易更简单~</p>
+		<p>各种娱乐设施、健身器材应有尽有；各界大咖分享、同行业活动交流带你分分钟涨姿势；各类节日礼品、零食红包惊喜不断；神器装备必须有，mac pro，mac mini 高配 + dell 22寸显示器，高端Blue air空气净化器；弹性工作不打卡，机智错峰上下班</p>
+		<a href="http://www.lagou.com/gongsi/1748.html" target="_blank">查看职位</a>
+	</section>
 	
-			<section id="testimonial">
-				<h3>合作案例</h3>
-				<div class="row">
-					<div class="col s12 m4 l4 ">
-						<img src="img/img_three.png" />
-					</div>
-					<div class="hide-on-small-only col s12 m4 l4 ">
-						<img src="img/img_two.png" />
-					</div>
-					<div class="hide-on-small-only col s12 m4 l4 ">
-						<img src="img/img_one.png" />
-					</div>
-					<p>提高消费者体验的同时</br>让线下商户真实感受到移动支付的强大优势</p>
-				</div>
-				<div class="row">
-					<div class="hide-on-small-only col s12 m4 l4 ">
-						<img src="img/img_four.png" />
-					</div>
-					<div class="col s12 m4 l4 ">
-						<img src="img/img_five.png" />
-					</div>
-					<div class="hide-on-small-only col s12 m4 l4 ">
-						<img src="img/img_six.png" />
-					</div>
-					<p>将官方活动与电影元素相结合</br>为商户打造独一无二的主题营销活动</p>
-				</div>
-			</section>
-			<section id="payment" class="hide-on-small-only"></section>	
-			<div class="divider"></div>
-			<div class="mobile-tab">
-				<a href="#" class="download-now hide-on-med-and-up">下载客户端</a>
-				<a href="#" target="_blank" class="apply-now hide-on-med-and-up">商户申请</a>			
+	<div class="divider"></div>
+	
+	<section id="contactus">
+		<div class="row">
+			<div class="col s12 m12 l6">
+				<h1>中国业务</h1>
+				<p>电话：4000-360-280</p>
+				<p>邮件：media@qfpay.com</p>
+				<p>地址：北京市朝阳区望京SOHO T3 A座17层</p>
+				<p>微信：ihaojin</p>
+				<p>微博：钱方好近官方微博</p>
 			</div>
-	</div>
+			<div class="col s12 m12 l6">
+				<h1>海外业务</h1>
+				<p>电话：＋852 2613 9299</p>
+				<p>邮件：hk@qfpay.com</p>
+				<p>Facebook : QFPay 錢方好近</p>
+				<p>Instagram : QFPay </p>
+				<p>Twitter: QFPayNear</p>
+			</div>
+		</div>
+	</section>
+</div>
 
 
 		<!--/主体-->
@@ -182,17 +154,6 @@
 	</div>
 </div> -->
 
-
-	<script src="/Public/Home/js/common/jquery-1.11.3.min.js"></script>
-<script src="/Public/Home/js/common/dynamics.min.js"></script>
-<script src="/Public/Home/js/Index/main.js"></script>
-<script src="/Public/Home/js/common/materialize.min.js"></script>
-
-
-<script>
-$('.button-collapse').sideNav();
-$('.modal-trigger').leanModal();	
-</script>
 
 <!--加载隐藏元素-->
 <div class="hidden">

@@ -368,63 +368,43 @@ nav .side-nav a:hover {
   margin-bottom: 50px;
   border-radius: 5px;
   border: 1px solid #eaeaea; }
-  @media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) {
     .mem_features {
       padding: 25px 40px 40px 40px;
       margin: 60px 0;
-      box-shadow: 5px 10px 25px 3px rgba(190, 218, 253, 0.35); } }
+      box-shadow: 5px 10px 25px 3px rgba(190, 218, 253, 0.35); 
+      } 
+}
 
-#membership {
+/*优势服务/投放案例*/
+.membership {
   text-align: center;
-  position: relative; }
-  #membership .top_section {
-    padding: 40px 0 30px; }
-    #membership .top_section p {
-      padding-top: 6px; }
-    @media only screen and (min-width: 601px) {
-      #membership .top_section {
-        padding: 40px 0 50px 0; } }
-  #membership .features .col {
-    padding: 0 20px; }
-  @media only screen and (max-width: 601px) {
-    #membership .features .item {
-      padding: 17px; } }
-  #membership .features p {
-    margin-top: 12px;
-    color: #9094a2; }
-  #membership .features img {
-    width: 100px; }
-    @media only screen and (min-width: 601px) {
-      #membership .features img {
-        margin: 15px; } }
-  #membership h4 {
+  position: relative; 
+}
+.membership .top_section {
+  padding: 40px 0 30px; 
+}
+.membership .top_section p {
+  margin-top:30px;
+  padding-top: 6px; 
+}
+
+@media only screen and (min-width: 601px) {
+      .membership .top_section {
+        padding: 40px 0 50px 0; 
+      } 
+}
+.membership  h4 {
     font-size: 1.10em;
     font-weight: 500;
-    line-height: 1.5; }
-    @media only screen and (min-width: 601px) {
-      #membership h4 {
-        font-size: 1.20em; } }
-  #membership .set_one {
-    padding: 0; }
-    @media only screen and (min-width: 601px) {
-      #membership .set_one {
-        padding: 20px 0 50px 0; } }
-  #membership .set_two {
-    padding: 0; }
-    @media only screen and (min-width: 601px) {
-      #membership .set_two {
-        padding: 0 0 30px 0; } }
-  @media only screen and (min-width: 601px) {
-    #membership {
-      padding: 40px 0; } }
+    line-height: 1.5; 
+}
+@media only screen and (min-width: 601px) {
+    .membership  h4 {
+      font-size: 1.20em; 
+    } 
+}
 
-.icon {
-  box-shadow: 5px 10px 25px 3px rgba(190, 218, 253, 0.35);
-  border-radius: 100%;
-  top: 232px;
-  right: 44%;
-  position: absolute;
-  width: 150px; }
 
 #promo {
   text-align: center;
@@ -445,10 +425,28 @@ nav .side-nav a:hover {
       #promo h4 {
         margin: 40px 0 5px 0; } }
   #promo p {
-    padding-top: 6px; }
-  @media only screen and (min-width: 601px) {
-    #promo {
-      margin: 50px 0 70px 0; } }
+    padding-top: 6px; 
+  }
+@media only screen and (min-width: 601px) {
+  #promo {
+    margin: 50px 0 70px 0; 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #order .col {
   float: right; }
@@ -763,11 +761,13 @@ nav .side-nav a:hover {
     text-align: left;
     line-height: 2;
     padding-bottom: 10px; }
-  #about h3 {
-    text-align: center;
-    padding-bottom: 15px; }
+#about h3 {
+  text-align: center;
+  padding-bottom: 15px; 
+}
   #about .col {
-    margin: 20px 0; }
+    margin: 20px 0; 
+  }
     @media only screen and (min-width: 601px) {
       #about .col {
         padding: 40px 30px;
@@ -790,12 +790,19 @@ nav .side-nav a:hover {
     #about .vision p {
       padding-top: 10px;
       font-size: 1.1em; }
+
+
   @media only screen and (min-width: 601px) {
     #about {
-      padding: 40px 0 0; } }
+        padding: 148px 0 0; 
+      } 
+  }
+
   @media only screen and (max-width: 601px) {
     #about {
-      margin-top: 50px; } }
+      margin-top: 50px; 
+    } 
+}
 
 #join {
   padding: 20px 0;

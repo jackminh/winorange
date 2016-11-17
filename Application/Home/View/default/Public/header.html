@@ -3,23 +3,23 @@
 	<nav role="navigation">
 		<div class="nav-wrapper container">
 			<a href="{:U('Index/index')}" class="logo">
-				<img src="img/logo.svg" / >
+				<img src="__IMG__/home/WiOrange_logo.png" / >
 			</a>
 			<span class="login"></span>
 			<span class="login"></span>
 			<ul class="right hide-on-med-and-down" id="nav-links">
-				<li><a  class="active"  href="{:U('Index/index')}">首页</a></li>
-				<li><a href="{:U('Index/index')}">产品介绍</a></li>
-				<li><a href="{:U('Index/index')}">关于我们</a></li>
-				<li><a href="{:U('Index/index')}">合作案例</a></li>
-				<li><a href="{:U('Index/index')}">联系我们</a></li>				
+				<li><a  class="<if condition='$flagindex eq ACTION_NAME'>active</if>"  href="{:U('Index/index')}">首页</a></li>
+				<li><a  class="<if condition='$flagproduct eq ACTION_NAME'>active</if>" href="{:U('Index/product')}">产品介绍</a></li>
+				<li><a  class="<if condition='$flagabout eq ACTION_NAME'>active</if>" href="{:U('Index/about')}">关于我们</a></li>
+				<li><a  class="<if condition='$flagcasees eq ACTION_NAME'>active</if>" href="{:U('Index/casees')}">合作案例</a></li>
+				<li><a  class="<if condition='$flagcontact eq ACTION_NAME'>active</if>" href="{:U('Index/contact')}">联系我们</a></li>				
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
 				<li><a href="{:U('Index/index')}">首页</a></li>
-				<li><a href="{:U('Index/index')}">产品介绍</a></li>
-				<li><a href="{:U('Index/index')}">关于我们</a></li>＼
-				<li><a href="{:U('Index/index')}">合作案例</a></li>
-				<li><a href="{:U('Index/index')}">联系我们</a></li>	
+				<li><a href="{:U('Index/product')}">产品介绍</a></li>
+				<li><a href="{:U('Index/about')}">关于我们</a></li>＼
+				<li><a href="{:U('Index/casees')}">合作案例</a></li>
+				<li><a href="{:U('Index/contact')}">联系我们</a></li>	
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse hide-on-large-only">
 				<img class="menu" src="__IMG__/home/menu-gray.svg"/>

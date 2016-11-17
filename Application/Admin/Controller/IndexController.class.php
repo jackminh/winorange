@@ -1,8 +1,8 @@
 <?php
 namespace Admin\Controller;
-use Admin\Controller\AdminController;
+use Think\Controller;
 
-class IndexController extends AdminController {
+class IndexController extends Controller {
 
 
 	/**
@@ -18,13 +18,8 @@ class IndexController extends AdminController {
 	 * @return [type] [description]
 	 */
     public function index(){
-       
-    	var_dump('index');
-       exit;
 
     	$this->display();
-
-
     }
 
     /**

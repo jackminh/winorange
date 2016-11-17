@@ -1,151 +1,47 @@
 <extend name="Base/common"/>
-<block name="script">
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?6c4c0dc217299643e9b6984421d5a7a2";
-		  var s = document.getElementsByTagName("script")[0];
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>	
-</block>
 <block name="body">
 	<section id="hero">
 		<div class="row"></div>
 	</section>
 	<div class="wrapper">
-			<section id="zero">
+			<!--优势服务-->
+			<div class="membership">
 				<div class="row">
-					<div class="col s12 m6 l6">
-						<div class="zero-text">
-							<h3>零成本接入最受顾客欢迎的支付全案 <span>微信支付 / 支付宝 / 京东钱包</span></h3>
-							<p>下载钱方好近商户，3分钟帮您接入主流移动支付方式，官方补贴活动每月不断，商户在交易后第二个工作日<span id="days"> T+1 </span>即可收到交易款项。</p>
-						</div>
-					</div>
-					<div class="col s12 m6 l6">
-						<img src="img/zero.svg" />
+					<div class="top_section col s12">
+						<h3>优势服务</h3>
+						<p><img src="__IMG__/home/youshi.png" /></p>						
 					</div>
 				</div>
-			</section>
-
-			<div class="divider"></div>
-	
-			<div id="membership">
-					<div class="row">
-						<div class="top_section col s12">
-							<h3>消费者到店使用微信支付自动成为店铺会员</h3>
-							<p>通过会员管理、会员通知、红包营销、会员集点四大会员功能，帮助店铺改善老顾客流失问题，提高顾客到店次数，降低拉新成本。</p>
-						</div>
-					</div>
-					<img class="icon hide-on-small-only" src="img/member.svg" />
-					<div class="mem_features">
-							<div class="row features set_one">
-								<div class="item col s12 m6 l6">
-									<img src="img/manage.svg" />
-									<h4><span style="color:#5B8DFF">会员管理</span> — 支付即会员</h4>
-									<p class="hide-on-small-only">所有到店消费的顾客使用微信支付即成为店铺会员</br>随时掌握会员消费时间、频次、金额等动态</p>
-
-								</div>
-								<div class="item col s12 m6 l6">
-									<img src="img/notification.svg" />
-									<h4><span style="color:#FFA000">会员通知</span> — 主动发送红包和活动通知</h4>
-									<p class="hide-on-small-only">优惠活动直达店铺会员 主动发红包召回老顾客</br> 刺激消费改善老顾客流失问题</p>
-								</div>
-							</div>
-							<div class=" row features set_two">
-								<div class="item col s12 m6 l6">
-									<img src="img/hongbao.svg" />
-									<h4><span style="color:#FF4820">红包营销</span> — 创建个性化红包活动</h4>
-									<p class="hide-on-small-only">顾客到店使用微信支付满足领取门槛即领红包，下次消费自动抵扣; 增加顾客到店次数 大幅降低拉客成本</p>
-								</div>
-								<div class="item col s12 m6 l6">
-									<img src="img/points.svg" />
-									<h4><span style="color:#8B62E9">会员集点</span> — 首创集点活动玩法 趣味"集"满回头客</h4>
-									<p class="hide-on-small-only">顾客最爱玩的集点活动 操作简单效果显著</br> 一周增加3倍回头客</p>
-
-								</div>
-							</div>		
-					</div>
 			</div>
 
 			<div class="divider"></div>
-
-			<section id="promo">
+			
+			<!--投放案例-->
+			<div class="membership">
 				<div class="row">
 					<div class="top_section col s12">
-						<h3>营销功能</h3>
-						<p>线上打造店铺明星商品 一键获得营销专属海报</p>
+						<h3>投放案例</h3>
+						<p><img src="__IMG__/home/anli.png" /></p>						
 					</div>
-					<div class="col s12 m6 l6">
-						<img src="img/temai_three.jpg" />
-						<h4><span style="color:#FE9B20">限时特卖</span> 顾客在线抢购 直接到店兑换</h4>
-						<p>轻松打造明星商品 短时间聚集大量人气 </br>多入口、多方式曝光你的特卖商品</p>
-					</div> 
-					<div class="col s12 m6 l6">
-						<img src="img/temai_two.jpg" />
-						<h4><span style="color:#FE9B20">活动营销</span> 用最简单的方式达到最佳的传播效果</h4>
-						<p>一键获得实时热点、节日营销店铺专属海报 </br>灵活搭配店铺商品 只做你想喜欢的活动营销</p>
-					</div> 
 				</div>
-		    </section>
+			</div>
+	
+			<!--合作伙伴-->
+			<div class="membership">
+				<div class="row">
+					<div class="top_section col s12">
+						<h3>合作伙伴</h3>
+						<p><img src="__IMG__/home/huoban.png" /></p>						
+					</div>
+				</div>
+			</div>
 	
 			<div class="divider"></div>
-	
-			<section id="order">
-				<div class="row">
-					<div class="col s12 m6 l6">
-						<div class="order-text">
-							<h3>智慧餐厅 微信点餐功能</h3>
-							<p>所有商品上传为电子菜单，手机端随时调整，顾客线上自助下单，无需等待结账及找零，后厨直接打出小票，方便快捷避免错单。</p>
-						</div>
-					</div>
-					<div class="col s12 m6 l6">
-						<img src="img/order.png" />
-					</div>
-				</div>
-			</section>
-	
-			<div class="divider"></div>
-	
-			<section id="sub">
-				<div class="row">
-					<div class="col s12 m6 l6">
-						<div class="sub-text">
-							<h3>公众号自动吸粉 关注即粉丝</h3>
-							<p>扫码完成支付后默认关注商户公众号，帮助商户累积公众号粉丝，菜单栏添加会员、点餐、外卖等功能，通过红包、集点、自助点餐及外卖等功能，增强粉丝粘性。</p>
-						</div>
-					</div>
-				    <div class="col s12 m6 l6">
-						<img src="img/fans.png" />
-					</div>
-				</div>
-			</section>
 
-			<div class="divider"></div>
-	
-			<section id="ad">
-				<div class="row">
-						<div class="col s12 m6 l6">
-						<div class="ad-text">
-							<h3>千万粉丝的公众号平台</h3>
-							<p>图文推送，运用大数据精准直达潜在用户</p>
-							<p>支付消息，每天数十万次的品牌高强度曝光</p>
-							<p>菜单展示，持续引流提升影响力及转化效果。</p>
-							<a href="#" target="_blank">我要推广</a>
-						</div>
-					</div>
-					<div class="col s12 m6 l6">
-						<img src="__IMG__/home/ad_new.png" />
-					</div>
-				</div>
-			</section>
-
-	
 			<div class="divider hide-on-med-and-up"></div>
 	
 			<section id="testimonial">
-				<h3>官方活动往期案例</h3>
+				<h3>合作案例</h3>
 				<div class="row">
 					<div class="col s12 m4 l4 ">
 						<img src="img/img_three.png" />
