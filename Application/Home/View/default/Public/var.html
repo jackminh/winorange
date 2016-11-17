@@ -1,0 +1,92 @@
+<script src="__JS__/common/jquery-1.11.3.min.js"></script>
+<script src="__JS__/common/dynamics.min.js"></script>
+<script src="__JS__/Index/main.js"></script>
+<script src="__JS__/common/materialize.min.js"></script>
+<script src="http://cdn.staticfile.org/zepto/1.0rc1/zepto.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+  var escape2Html = function(str) {
+    var arrEntities = {
+      'lt': '<',
+      'gt': '>',
+      'nbsp': ' ',
+      'amp': '&',
+      'quot': '"'
+    };
+    return str.replace(/&(lt|gt|nbsp|amp|quot);/ig, function(all, t) {
+      return arrEntities[t];
+    });
+  };
+  var removeHtmlTab = function(tab) {
+    return tab.replace(/<[^<>]+?>/g, ''); //删除所有HTML标签
+  };
+  var util = {
+    escape2Html: escape2Html,
+    removeHtmlTab: removeHtmlTab
+  };
+    var configWx = function(cb) {
+      $.ajax({
+        url: 'http://api.haojin.in/server/wxshare',
+        data: {
+          url: location.href
+        },
+	dataType: 'json',
+        success: function(data) {
+          var respCode = data.respcd;
+          if (respCode === '0000') {
+            data = data.data;
+            data.debug = false;
+            data.jsApiList = [
+              'checkJsApi',
+              'onMenuShareTimeline',
+              'onMenuShareAppMessage',
+              'onMenuShareQQ',
+              'onMenuShareWeibo'
+            ];
+            data.nonceStr = data.noncestr;
+            delete data.noncestr;
+            data.url = location.href;
+            wx.config(data);
+            if (cb) {
+              cb();
+            }
+          }
+        },
+        error: function(data) {
+          console.error(data);
+        }
+      });
+    };
+    var share = function(data) {
+      data.appId = data.appId || 'wxeb6e671f5571abce';
+      data.desc = util.removeHtmlTab(util.escape2Html(data.desc)).substring(0, 100);
+      data.complete = function(data) {
+        data.complete();
+      };
+      if (!data.isConfiged) {
+        configWx();
+      }
+      wx.ready(function() {
+        // 2. 分享接口
+        // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
+        wx.onMenuShareAppMessage(data);
+        // 2.2 监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+        wx.onMenuShareTimeline(data);
+        // 2.3 监听“分享到QQ”按钮点击、自定义分享内容及分享结果接口
+        wx.onMenuShareQQ(data);
+        // 2.4 监听“分享到微博”按钮点击、自定义分享内容及分享结果接口
+        wx.onMenuShareWeibo(data);
+      });
+    };
+    share({
+      link: location.href,
+      title: '钱方好近-支付即会员，一步完成收款和推广！',
+      desc: '零成本开通微信支付、支付宝',
+      imgUrl: 'http://haojin.in/wp-content/uploads/2015/11/merchant.png'
+    });
+</script>
+
+<script>
+$('.button-collapse').sideNav();
+$('.modal-trigger').leanModal();	
+</script>
